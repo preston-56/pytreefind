@@ -65,4 +65,4 @@ twine upload dist/*
 
 ## License
 
-MIT License - Preston Osoro
+[MIT License](LICENSE) - Preston Osoro
