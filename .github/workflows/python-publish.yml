@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write 
+  id-token: write
 
 jobs:
   release-build:
@@ -39,7 +39,7 @@ jobs:
       - release-build
 
     permissions:
-      id-token: write  #
+      id-token: write  
 
     steps:
       - name: Retrieve release distributions
@@ -51,5 +51,5 @@ jobs:
       - name: Publish release distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          attestations: true
           packages-dir: dist/
+          attestations: true
