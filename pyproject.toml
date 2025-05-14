@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytreefind"
-version = "0.1.0"
+version = "0.1.1"
 description = "A CLI tool to list Python backend files, ignoring caches, envs, and system files"
 authors = ["Preston Osoro <prestonosoro56@gmail.com>"]
 license = "MIT"
