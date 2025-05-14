@@ -1,11 +1,10 @@
-[project]
+[tool.poetry]
 name = "pytreefind"
 version = "0.1.0"
 description = "A CLI tool to list Python backend files, ignoring caches, envs, and system files"
+authors = ["Preston Osoro <prestonosoro56@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.7"
-license = { text = "MIT" }
-authors = [{ name = "Preston Osoro", email = "prestonosoro56@gmail.com" }]
 keywords = ["cli", "tree", "python", "backend", "file-structure"]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -13,11 +12,9 @@ classifiers = [
     "Operating System :: OS Independent"
 ]
 
-[project.scripts]
+[tool.poetry.scripts]
 pytreefind = "pytreefind.tree:main"
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
